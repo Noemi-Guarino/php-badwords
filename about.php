@@ -20,13 +20,15 @@
 
     <p>
         <?php
-        echo $usertext
+        echo $usertext;
+        echo strlen($usertext)
         ?>
     </p>
 
     <p>
         <?php
-        echo $word
+        echo $word;
+        echo strlen($word)
         ?>
     </p>
 
