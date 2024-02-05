@@ -1,12 +1,9 @@
 <?php
     $usertext= $_GET["usertext"];
-    echo $usertext;
 
     $censored= $_GET["censored"];
-    echo $censored;
 
     $word=str_replace($censored, '***' , $usertext);
-    echo $word;
 ?>
 
 <!DOCTYPE html>
@@ -18,19 +15,24 @@
 </head>
 <body>
 
+    <h2>Testo originale</h2>
     <p>
         <?php
-        echo $usertext;
-        echo strlen($usertext);
+            echo $usertext;
+            echo '. La lunghezza del testo è:' . strlen($usertext); 
         ?>
     </p>
 
+    <hr>
+
+    <h2>Testo modificato</h2>
     <p>
         <?php
-        echo $word;
-        echo strlen($word);
+            echo $word;
+            echo '. La lunghezza del testo è:' . strlen($word);
         ?>
     </p>
+
 
     
 </body>

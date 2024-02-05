@@ -7,7 +7,6 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    <a href="./about.php">about</a>
     <div class="container p-4">
         <form action="about.php" method="GET">
             <div class="mb-3">
