@@ -9,7 +9,7 @@
 <body>
     <a href="./about.php">about</a>
     <div class="container p-4">
-        <form action="about.php" method="get">
+        <form action="about.php" method="GET">
             <div class="mb-3">
                 <label for="usertext" class="form-label">Inserisci il testo</label>
                 <input type="textarea" name="usertext" class="form-control" id="text" aria-describedby="emailHelp">

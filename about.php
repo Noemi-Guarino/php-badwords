@@ -1,12 +1,12 @@
 <?php
-    $usertext= $_get["usertext"];
-    echo $usertext
+    $usertext= $_GET["usertext"];
+    echo $usertext;
 
-    $censored= $_get["censored"];
-    echo $censored
+    $censored= $_GET["censored"];
+    echo $censored;
 
     $word=str_replace($censored, '***' , $usertext);
-    echo $word
+    echo $word;
 ?>
 
 <!DOCTYPE html>
@@ -21,14 +21,14 @@
     <p>
         <?php
         echo $usertext;
-        echo strlen($usertext)
+        echo strlen($usertext);
         ?>
     </p>
 
     <p>
         <?php
         echo $word;
-        echo strlen($word)
+        echo strlen($word);
         ?>
     </p>
 
